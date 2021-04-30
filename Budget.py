@@ -29,17 +29,13 @@ class Budget:
         return "Your current balance is: ${}" .format(self.amount)
 
     def check_balance(self, amount):
-        #return self.amount
-        return "Your current {} balance is: ${}" .format(self.category, self.amount)
-        pass
+        return;
+        #update per feedback
 
-    def transfer(self, category):
-        if self.category >= self.category:
-            return "No need to transfer your balance"
-        else:
-            self.category += self.category
-            return "We have transferred funds from {} budget to {}.".format(self.category, self.category)
-            pass
+    def transfer(self, category, amount):
+        self.amount -= amount
+        category.amount += amount
+        #made update per feedback
 
 food_category = Budget("Food", 1000)
 clothing_category = Budget("Clothing", 1000)
